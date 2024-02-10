@@ -1,0 +1,218 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageWrappper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h3{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.LoginPage{
+  width: 500px;
+  height: 450px;
+  /* background-color: aquamarine; */
+  border: 1px solid grey;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+label{
+  text-align: left;
+}
+
+input{
+  width: 300px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  outline: none;
+  font-size: 15px;
+}
+
+button,
+.update-profile{
+  width: 300px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: rgb(16, 193, 246);
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+.update-profile{
+  width: 250px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+.already{
+  margin-top: 20px;
+}
+
+.toSignUp,
+.toLogin{
+  color: rgb(16, 193, 246);
+}
+
+span{
+  cursor: pointer;
+}
+
+span:hover{
+  text-decoration: underline;
+}
+
+.Dashboard{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile{
+  width: 300px;
+  height: 200px;
+  border: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.profileHead{
+  margin-bottom: 20px;
+}
+
+.logout{
+  margin-top: 20px;
+  color: rgb(16, 193, 246);
+  text-decoration: none;
+}
+
+.logout:hover{
+  text-decoration: underline;
+}
+
+
+.UserNotFound,
+.WrongPassword,
+.FailedToResetPassword,
+.UpdateProfilePassRefNotMatch{
+  background-color: rgb(228, 190, 190);
+  width: 300px;
+  height: 4em;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: rgb(128, 0, 0);
+}
+
+.SignupSuccess,
+.IfEmailCorrect,
+.alertBox{
+  background-color: rgb(190, 228, 190);
+  width: 300px;
+  height: 4em;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: green;
+}
+
+.ForgetPassword{
+  margin-top: 20px;
+  color: rgb(16, 193, 246);
+}
+
+.ForgetPasswordPage{
+  width: 500px;
+  height: 350px;
+  /* background-color: aquamarine; */
+  border: 1px solid grey;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px){
+  .LoginPage{
+    width: 300px;
+    height: 420px;
+  }
+
+  input{
+    width: 80%;
+  }
+
+  button{
+   width: 80%;
+  }
+
+.UserNotFound,
+.WrongPassword,
+.FailedToResetPassword,
+.SignupSuccess,
+.IfEmailCorrect,
+.alertBox,
+.UpdateProfilePassRefNotMatch{
+  width: 80%;
+}
+
+h3{
+  font-size: 30px;
+}
+
+.ForgetPassword,
+.already,
+.toSignUp{
+  font-size: 14px;
+}
+
+
+
+}
+
+@media screen and (max-width: 400px){
+  .profile{
+    width: 250px;
+  }
+
+  .update-profile{
+    width: 80%;
+  }
+}
